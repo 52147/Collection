@@ -9,17 +9,17 @@ package interfacepractice2;
  *    1. the interface and 
  *    2. the implementation.
  *    
- *  The class interface:
+ *  1. The class interface:
  *    
  *     1. heading for the public methods
  *     2. name for the public constant of the class
  *     3. comments: how to use the public methods and public constants
  *    
- *    - The class interface tells programmers all they need to know t use the class in their programs.
+ *    - The class interface tells programmers all they need to know to use the class in their programs.
  *    - The class interface consists of the headings for the public methods and public named constants of the class,
  *      along with comments that tell a programmer how to use these public methods and constants.
  *    
- *  The implementation:
+ *  2. The implementation:
  *  	
  *  	1. private constants
  *      2. private instance variables
@@ -69,7 +69,7 @@ package interfacepractice2;
  * 
  *
  */
-public interface Mesurable {
+public interface Measurable {
 	/**Returns the perimeter*/
 	public double getPerimeter();
 	
