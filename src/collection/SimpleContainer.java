@@ -3,8 +3,7 @@ package collection;
  * = the collection api =
  *  
  *  - Data structure:
- *  
- *  
+ *    
  *    - Data structures allows us to achieve an important object-oriented program goal:
  *      component reuse.
  *    - When each data structures has been implement once it can be used over and over in various applications.

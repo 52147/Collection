@@ -5,6 +5,7 @@ package interfacepractice2;
  *  - Encapsulation is a form of information hiding.
  *  - For encapsulation to be useful, a class definition must be given in such a way that a programmer can use the class
  *    without seeing the hidden details.
+ *    
  *  - Encapsulation neatly divides a class definition into 2 parts, which will call
  *    1. the interface and 
  *    2. the implementation.
@@ -65,8 +66,7 @@ package interfacepractice2;
 
 
 /**
- * An interface for methods that return the perimeter and area of an object.
- * 
+ * An interface for methods that return the perimeter and area of an object. 
  *
  */
 public interface Measurable {

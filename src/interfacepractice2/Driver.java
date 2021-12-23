@@ -1,15 +1,17 @@
 package interfacepractice2;
 /**
+ * A variable type vs. Object reference:
  * 
  * - A variable's type determines what method names can be used, 
  *   but the object the variable references determines which definition of the method will be used.
  * 
- * - dynamic binding and polymorphism apply to interface:
+ * dynamic binding and polymorphism apply to interface:
  * 
  *   - Dynamic binding applies to interfaces just as it does with classes.
  *   - The process enables objects of different classes to substitute for one another,
  *     if they have the same interface.
  *   - This ability--called polymmorphism--allows different objects to use different method actions for the same method name.
+ *   
  */
 
 public class Driver {
@@ -32,13 +34,18 @@ public class Driver {
 		/**
 		 * - Even though the type of both variables is Measurable, the objects referenced by box and disc
 		 *   have different definitions of getPerimeter and getArea.
-		 * - The variable box references a Rectangle object; disc referenced a Circle object.
+		 *   -> The variable box references a Rectangle object; disc referenced a Circle object.
+		 * 
+		 * = polymorphism =
 		 * 
 		 * - The class Rectangle and Circle implement the same interface,
 		 *   so we are able to substitute an instance of one for an instance of the other
-		 *   when we  call the method display.
+		 *   when we call the method display.
 		 * - This is an example of polymorphism--the ability to substitute one object for another 
 		 *   using dynamic binding.
+		 *   
+		 * dynamic binding: 
+		 * 
 		 * - These terms refer to the fact that the method invocation is not bound to the method definition
 		 *   until the program executes.
 		 * 
@@ -71,6 +78,7 @@ public class Driver {
 		 * - A variable of an interface type can reference an object of a class that implements the interface,
 		 *   but the object itself always determines which method actions to use for every method name.
 		 * - The type of the variable does not matter.
+		 * 
 		 * - What matter is the class name when the object was created, because java uses dynamic binding.
 		 * 
 		 * - You therefore need to be aware of how dynamic binding interacts with the java compiler's type checking.
@@ -83,12 +91,12 @@ public class Driver {
 		// Thus, the invocation of getCircumference is illegal.
 		//      System.out.println(a.getCircumference()); // illegal
 		// because getCircumference is not the name of a method in the Measurable interface.
-		// In this invocation, the variable m is of type Measurable,
-		// but the object referenced by m is still an object of type Circle.
+		// In this invocation, the variable a is of type Measurable,
+		// but the object referenced by a is still an object of type Circle.
 		//
 		// Thus, although the object has the method getCircumference,
 		// the compiler does not know this.
-		// To make the invocation valid, you need a tyoe cast, such as the following:
+		// To make the invocation valid, you need a type cast, such as the following:
 		Circle c = (Circle)a;
 		System.out.println(c.getCircumference() ); // legal
 		

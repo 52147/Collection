@@ -1,6 +1,7 @@
 package IteratorPractice;
 
 /**
+ * = Iterator class =
  * 
  * An iterator class that steps through MyContainer.
  * 

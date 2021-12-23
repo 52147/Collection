@@ -25,6 +25,11 @@ public class Rectangle extends Shape implements Stretchable{
 	public double getWidth() {
 		return width;
 	}
+	@Override
+	public void stretch(double factor) {
+		// TODO Auto-generated method stub
+		
+	}
 	
  
 }

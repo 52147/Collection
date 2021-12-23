@@ -1,5 +1,7 @@
 package interfacepractice2;
 /**
+ * Circle class:
+ * 
  * - Circle class and Rectangle can both implements the interface.
  * 
  * - Notice that Circle defines the method getCircimferemce in addition to the methods declared in the interface.
@@ -12,11 +14,6 @@ package interfacepractice2;
  * - Doing so makes the class easier to maintain.
  *   - For example, if we ever discovered a problem with the statements in getPerimeter,
  *                  fixing it would also fix getCircumference. 
- *  
- *   
- * 
- * 
- *
  */
 
 /**

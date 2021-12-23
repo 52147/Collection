@@ -8,9 +8,7 @@ package iteratorpractice2;
  *  - There are only 2 changes to the implementation of MyContainerIterator.
  *  
  *    - First, the implements clause has been added.
- *    - Second, MyContainerIterator no longer needs to be a public class.
- *    
- *    
+ *    - Second, MyContainerIterator no longer needs to be a public class.    
  *
  */
 

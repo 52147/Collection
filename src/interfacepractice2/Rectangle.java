@@ -15,11 +15,11 @@ package interfacepractice2;
  *   
  *   1. include the phrase:
  *   
- *      implements interface's name
+ *      ex: implements interface's name
  *      
  *      to implement more that one interface, just list all the interface names
  *      
- *      implements interface 1, interface 2
+ *      ex: implements interface 1, interface 2
  *      
  *   2. Define each method declared in the interface(s)
  *      
@@ -27,12 +27,7 @@ package interfacepractice2;
  *        a class defines certain method.
  *      - Additionally, recall that Java does not allow a class to be derived form multiple parent classes.
  *      - However, a class can implement multiple interfaces.
- *      - This is a way to capture some of the behavior that would be possible with multiple inheritance.
- *      
- *  
- *  
- * 
- * 
+ *      - This is a way to capture some of the behavior that would be possible with multiple inheritance. 
  *
  */
 
@@ -41,7 +36,6 @@ package interfacepractice2;
  * A class of rectangles.
  * Rectangle class implement the interface Measurable
  * Rectangle class must also implement the 2 methods getPerimeter() and getArea().
- * 
  *
  */
 public class Rectangle implements Measurable{
