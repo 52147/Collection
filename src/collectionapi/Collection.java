@@ -114,6 +114,9 @@ package collectionapi;
  *    because the return type for the iterator method is actually at our own class that
  *    extend java.util.Iterator.
  *    
+ *    
+ *  Optional method:
+ *    
  *  - The Collection API also codifies the notion of an optional interface method.
  *    - For instance,
  *      - suppose we want an immutable collection:
@@ -124,7 +127,32 @@ package collectionapi;
  *          
  *  
  *    - However, there is an existing loophole:
- *      - Although the              
+ *      - Although the implementor of the immutable collection must implement add and remove, 
+ *        there is no rule that says these methods must do anything.
+ *        
+ *      - Instead, the implementor can simply throw a run-time UnsupportedOperationException.
+ *      - In doing so, the implementor has technically implemented the interface,
+ *        while not really providing add and remove.
+ *        
+ *      - By convention, interface methods that document that they are optional can be
+ *        implemented in this manner.
+ *      - If the implementation chooses not to implement an optional method, then it should document that fact.
+ *      
+ *      - It is up to the client user of the API to verify that the methof is implemented by
+ *        consulting the documentation,
+ *        and if the client ignores the documentation and calls the method anyway,
+ *        the run-time UnsupportedOperationException is thrown,
+ *        signifying a programming error.
+ *        
+ *    - Optional methods are somewhat controversial, but they do noe represent any new language additions.
+ *    - They are simply a convention.
+ *    
+ *    - We will eventually implement all methods.
+ *    
+ *    
+ *    - The most interesting of these methods is iterator, which is a factory method 
+ *      that creates and returns an Iterator object.
+ *    - The operation that can be performed by an Iterator.
  *       
  * 
  *
