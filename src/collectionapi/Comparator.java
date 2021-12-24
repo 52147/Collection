@@ -28,9 +28,7 @@ package collectionapi;
  *    2.
  *    - The other possibility is that the comparison function is embedded as the compare method
  *    in an object that implements the Comparator interface.
- *    - Comparator is defined in java.util
- *      
- *      
+ *    - Comparator is defined in java.util      
  *      
  *
  */
