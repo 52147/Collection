@@ -15,7 +15,24 @@ package collectionapi;
  *   elements in the forward direction.
  * - Thus in this state, hasNext returns false,
  *   but we can use hasPrevious and previous to traverse the list in reverse.
- *    
+ *   
+ *   remove() 
+ *   
+ *   - One difficulty with the ListIterator is that the semantics for remove must change slightly.
+ *   - The new semantics are that remove deletes from the List the last object returned
+ *     as a result of calling either next or previous,
+ *     and remove can only between calls to either next or previous.
+ *   
+ *   - To override the javadoc output that is generated for remove,
+ *     remove is listed in the ListIterator interface.
+ *   
+ *   
+ * - This interface is only a partial interface.
+ * - There are some additional methods in the ListIterator that we do not discuss in the text,
+ *   but which are used throughout as exercises.
+ * - These methods include add and set,
+ *   which allow the user to make changes to the List at the current location held by the iterator.
+ * 
  */
 
 /**
