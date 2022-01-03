@@ -35,17 +35,12 @@ package abstractclass;
  *   drawHere()
  *   - The shape is  drawn by a call to drawHere.
  *   - The method drawHere indents a number of spaces on the screen
+ *     equal to the offset and then write an asterisk on the screen.
+ *   - This simple output is just you can have something to test.
  *   
- *   
- *  
- *   
- *   
- *   
- *   
- *   
- *      
- *      
- *      
+ *   - You do not intend to use this version of drawHere in any application.
+ *   - You will override the definition of drawHere when you define classes for rectangles and triangles.
+ *        
  *
  */
 
