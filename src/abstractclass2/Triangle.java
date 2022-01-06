@@ -1,4 +1,4 @@
-package abstractclass;
+package abstractclass2;
 /**
  * - We can design the class Rectangle using the same techniques we used to design the class Rectangle.
  * - We will discuss only one part of the method drawHere for which the technical details might not be clear at first.
@@ -42,7 +42,7 @@ package abstractclass;
  * 
  *
  */
-public class Triangle extends ShapeBasics implements TriangleInterface{
+public abstract class Triangle extends ShapeBase implements TriangleInterface{
 	
 	private int base;
 	
