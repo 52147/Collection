@@ -75,24 +75,23 @@ package abstractclass;
  *
  */
 public interface ShapeInterface {
-	
 	/**
-	 Sets the offset for the shape.
+	 * Sets the offset for the shape.
 	 */
 	public void setOffset(int newOffset);
-	
+
 	/**
-	 Returns the offset for the shape.
+	 * Returns the offset for the shape.
 	 */
 	public int getOffset();
-	
+
 	/**
-	 Draw the shape at lineNumber lines down from the current line.
+	 * Draws the shape at lineNumber lines down from the current line.
 	 */
 	public void drawAt(int lineNumber);
+
 	/**
 	 * Draws the shape at the current line.
 	 */
 	public void drawHere();
-
 }
